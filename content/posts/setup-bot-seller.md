@@ -47,7 +47,8 @@ cd <hasil-unzip>
 untuk token bot ada di file .env
 ganti saja `BOT_TOKEN` dengan token bot mu dan ganti juga api key di file `plugins/config.py`
 untuk menambahkan server baru cukup gunakan cmd `/add` di bot telegram
-!["create"](https://telegra.ph/file/60743abc47fe3f6fb32d6.jpg)
+!["create"](https://telegra.ph/file/a76e6df6ef24f3090e5d7.jpg)
+!["apikey"](https://telegra.ph/file/9752b24940ebb0924e286.jpg)
 
 6. setelah bot selesai di setup tinggal di run aja
 jangan lupa pakai screen agar bot tetep hidup
