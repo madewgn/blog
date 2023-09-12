@@ -26,7 +26,7 @@ Cara install:
 1. upload file zip yang di berikanan oleh @madewgn ke VPS yang akan kamu gunakan untuk hosting bot nya
 2. Insta keperluan bot
 ```bash
-apt install python3 python3-pip zip unzip -y
+apt install unzip -y
 ```
 3. ekstrak file zip yang di berikan 
 ```bash
@@ -34,33 +34,25 @@ unzip namafile.zip
 ```
 ganti `namafile.zip` dengan nama dari file zip mu
 
-4. install requirements 
+4. install bahan²
 ```bash
-pip3 install -r req.txt
+cd <hasil-unzip>
+```
+```bash
+./install.sh
 ```
 
 5. ganti token dan menambahkan server
 
 untuk token bot ada di file .env
 ganti saja `BOT_TOKEN` dengan token bot mu dan ganti juga api key di file `plugins/config.py`
-untuk nambah server baru silakan tulis di bagian `create` di file plugins/main.py
+untuk menambahkan server baru cukup gunakan cmd `/add` di bot telegram
 !["create"](https://telegra.ph/file/60743abc47fe3f6fb32d6.jpg)
-
-untuk trial nya silakan di edit di file plugins/trial.py
-edit yang di var `l`, kode callback yang digunakan adalah setelah spasi
-misal nama servet nya `SG DO` atau `ID IKD` nah yang di ambil itu hanya `DO` dan `IKD` nya saja, itupun sudah di tambahkan `t` di awal callback nya untuk menandai bahwa itu trial, `t` untuk `trial`
-!["trial"](https://telegra.ph/file/00a1806e984fc3ff6b207.jpg)
-
-dan juga ganti domain nya dengan domain mu, serta `server1` itu var yang di ambil dati file `config.py`
-!["trial2"](https://telegra.ph/file/b06d8c26bcd6519da3819.jpg)
-
-sesuaikan juga yang di callback.py dengan yg ada dk main.py
-![setup](https://telegra.ph/file/97ac9f47bfca98368a202.jpg)
 
 6. setelah bot selesai di setup tinggal di run aja
 jangan lupa pakai screen agar bot tetep hidup
 ```bash
-screen -r bot
+screen -S bot
 ```
 lalu jalankan dengan perintah
 ```bash
